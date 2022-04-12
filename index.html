@@ -24,30 +24,33 @@
         <div class="container-medidas">
             <div class="inputs">
                 <label class="labels" for="ValorMetroQuadrado">Valor do Metro Quadrado:</label>
-                <input step="0.01" name="quantity" min="0.01" id="valorM2" placeholder="Insira o valor" type="number"
+                <input class="inputs__valores" step="0.01" name="quantity" min="0.01" id="valorM2" placeholder="Insira o valor" type="number"
                     required>
             </div>
             <div class="inputs">
                 <label class="labels" for="ValorInstalacao">Valor da Instalação:</label>
-                <input step="0.01" name="quantity" min="0.01" id="valorInst" placeholder="Insira o valor" type="number">
+                <input class="inputs__valores" step="0.01" name="quantity" min="0.01" id="valorInst" placeholder="Insira o valor" type="number">
             </div>
 
             <div class="inputs">
-                <label class="labels" for="ValorBando">Valor do bandô:</label>
-                <input step="0.01" name="quantity" min="0.01" id="valorBand" placeholder="Insira o valor" type="number">
+                <label class="labels" for="Bandos">Escolha o Bandô:</label>
+                <select class="inputs__valores" name="bandos" id="bandos">
+                    <option value="branco">Bandô Branco</option>
+                    <option value="preto">Bandô Preto</option>
+                </select>
             </div>
 
             <div class="inputs">
                 <label class="labels" for="Largura">Largura:</label>
-                <input id="larg" placeholder="Largura" type="number" required>
+                <input class="inputs__valores" id="larg" placeholder="Largura" type="number" required>
             </div>
             <div class="inputs">
                 <label class="labels" for="Largura">Altura:</label>
-                <input id="alt" placeholder="Altura" type="number" required>
+                <input class="inputs__valores" id="alt" placeholder="Altura" type="number" required>
             </div>
             <div class="inputs">
                 <label class="labels" for="Porcentagem">Porcentagem % (opcional):</label>
-                <input step="0.01" name="quantity" min="0.01" id="porcentagem" placeholder="Porcentagem" type="number">
+                <input class="inputs__valores" step="0.01" name="quantity" min="0.01" id="porcentagem" placeholder="Porcentagem" type="number">
             </div>
         </div>
 
