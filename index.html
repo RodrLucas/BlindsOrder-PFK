@@ -5,52 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&family=Work+Sans:wght@100;200;300;400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Calcular Orçamentos - Meire PFK </title>
 </head>
 
 <body>
+    <header>
+        <img class="header__img" src="./assets/book.svg" alt="Histórico">
+        <img class="header__img" src="./assets/Ellipse.svg" alt="Perfil">
+    </header>
+    <h1 class="title">Insira os dados:</h1>
     <div class="container">
         <div class="container-medidas">
-            <h1 class="title">Insira os dados abaixo:</h1>
-
-            <section class="section_inputs">
-                <!-- <div>
-                    <label for="persianas">Escolha o tipo de persiana:</label>
-                    <select name="persianas" id="persianas">
-                        <option value="Rolo">Rolô</option>
-                        <option value="DualVision">Dual Vision</option>
-                        <option value="Romana">Romana</option>
-                    </select>
-                </div> -->
-                <div class="inputs">
-                    <label class="labels" for="ValorMetroQuadrado">Valor do Metro Quadrado:</label>
-                    <input step="0.01" name="quantity" min="0.01" id="valorM2" placeholder="Insira o valor" type="number" required>
-                </div>
-                <div class="inputs">
-                    <label class="labels" for="ValorInstalacao">Valor da Instalação:</label>
-                    <input step="0.01" name="quantity" min="0.01" id="valorInst" placeholder="Insira o valor" type="number">
-                </div>
-                <div class="inputs">
-                    <label class="labels" for="Largura">Largura:</label>
-                    <input id="larg" placeholder="Largura" type="number" required>
-                </div>
-                <div class="inputs">
-                    <label class="labels" for="Largura">Altura:</label>
-                    <input id="alt" placeholder="Altura" type="number" required>
-                </div>
-                <div class="inputs">
-                    <label class="labels" for="Porcentagem">Porcentagem % (opcional):</label>
-                    <input step="0.01" name="quantity" min="0.01" id="porcentagem" placeholder="Porcentagem" type="number">
-                </div>
-            </section>
-
-            <button id="btn">Calcular</button>
-
-            <div class="result">
-                <p class="result__paragraph">Valor total:</p>
-                <p id="result"></p>
+            <div class="inputs">
+                <label class="labels" for="ValorMetroQuadrado">Valor do Metro Quadrado:</label>
+                <input step="0.01" name="quantity" min="0.01" id="valorM2" placeholder="Insira o valor" type="number"
+                    required>
             </div>
+            <div class="inputs">
+                <label class="labels" for="ValorInstalacao">Valor da Instalação:</label>
+                <input step="0.01" name="quantity" min="0.01" id="valorInst" placeholder="Insira o valor" type="number">
+            </div>
+            <div class="inputs">
+                <label class="labels" for="Largura">Largura:</label>
+                <input id="larg" placeholder="Largura" type="number" required>
+            </div>
+            <div class="inputs">
+                <label class="labels" for="Largura">Altura:</label>
+                <input id="alt" placeholder="Altura" type="number" required>
+            </div>
+            <div class="inputs">
+                <label class="labels" for="Porcentagem">Porcentagem % (opcional):</label>
+                <input step="0.01" name="quantity" min="0.01" id="porcentagem" placeholder="Porcentagem" type="number">
+            </div>
+        </div>
+
+        <button id="btn">Calcular</button>
+
+        <div class="result">
+            <p class="result__paragraph">Valor total:</p>
+            <p id="result"></p>
         </div>
     </div>
 </body>
